@@ -37,9 +37,22 @@
 .piece.blue {
   background-color: blue;
 }
+    /* Media query for screens less than large (lg) */
+@media (max-width: 1024px) {
+  .grid-cell {
+    width: 27px;
+    height: 27px;
+
+  }
+
+  .piece {
+    width: 15px;
+    height: 15px;
+  }
+}
   </style>
 </head>
-<body class="bg-gray-100 h-screen flex items-center justify-center px-2">
+<body class="bg-gray-100 h-screen flex items-center justify-center px-4">
 
   <div id="game-board" class="grid grid-cols-7 gap-4">
     <!-- Rows of Nine Men's Morris -->
